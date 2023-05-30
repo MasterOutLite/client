@@ -1,0 +1,56 @@
+$colorStar: var(--color-yellow);
+$radius:18px;
+
+.starContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.star{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: $radius;
+  width: $radius;
+  border-radius: 50%;
+  background: var(--color-red);
+  transition: all 0.5s;
+}
+
+.starHalf{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+
+  $smallRadius: $radius /2;
+  width: $smallRadius / 2;
+  height: $smallRadius ;
+
+  border-radius:0 $smallRadius / 2  $smallRadius / 2 0;
+  background-color: var(--color-white);
+}
+
+.test{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+
+  $smallRadius: $radius /2;
+  width: $smallRadius / 2;
+  height: $smallRadius ;
+
+  border-radius:0 $smallRadius / 2  $smallRadius / 2 0;
+  background-color: var(--color-white);
+}
+
+.starEmpty{
+    $radius: 50%;
+    width: $radius;
+    height: $radius;
+    opacity: 1;
+    border-radius: 50%;
+    transition: all 0.2s;
+    background: var(--color-white);
+}

@@ -1,0 +1,21 @@
+@use "../../styles/vars";
+@import "../../styles/template";
+
+$paddingVertical: 40px;
+
+.containerRender{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px 0;
+  padding: $paddingVertical 0;
+  @extend %tplContainer
+}
+
+.container{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px 0;
+  padding: $paddingVertical 0;
+}

@@ -1,5 +1,24 @@
 # Getting Started with Create React App
 
+## Run application
+# Start api
+### `cd api`
+### `yarn run dev`
+# Start client 
+### `cd client`
+### `yarn start`
+## command
+
+cd api
+yarn run dev
+
+cd client
+yarn start
+
+### User
+## login      Admin@test.ua
+## password   kuku
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

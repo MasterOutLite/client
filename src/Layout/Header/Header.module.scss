@@ -1,0 +1,52 @@
+@use "../../styles/vars";
+@use "../../styles/mixins";
+@use "../../styles/theme";
+@import "../../styles/template";
+
+$height: 50px;
+$item-height: 40px;
+$header-bg: #000;
+$header-color: #fff;
+
+.header {
+  width: 100%;
+  background: $header-bg;
+  color: $header-color;
+}
+
+.container {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+
+  @extend %tplContainer;
+}
+
+.item {
+  height: $item-height - 8px;
+  cursor: pointer;
+  @include mixins.respond-less(vars.$screen-phone) {
+   height: 2rem;
+  }
+  @include mixins.respond-less(vars.$screen-phone) {
+   height: 2rem;
+  }
+}
+
+.logoText {
+  flex-grow: 1;
+  line-height: 3rem;
+  font-size: 3rem;
+  cursor: pointer;
+
+  @include mixins.respond-less(vars.$screen-tablet) {
+    font-size:2rem;
+  }
+
+  @include mixins.respond-less(vars.$screen-phone) {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="_Шар_1-2" data-name="Шар 1">
+    <g>
+      <rect class="cls-1" x="0" y="22.98" width="86" height="8.04" rx="3.2" ry="3.2"/>
+      <rect class="cls-1" x="0" y="45.96" width="86" height="8.04" rx="3.2" ry="3.2"/>
+      <rect class="cls-1" x="0" y="0" width="86" height="8.04" rx="3.2" ry="3.2"/>
+    </g>
+  </g>
+</svg>

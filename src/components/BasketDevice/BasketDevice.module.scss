@@ -1,0 +1,103 @@
+@use "src/styles/vars";
+@use "src/styles/mixins";
+$height: 200px;
+
+.root {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  padding: 15px;
+  border-top: 3px solid var(--color-dark);
+
+  @media (max-width: vars.$screen-phone) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.imgContainer {
+  flex: 0 1 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoContainer {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px 0;
+  height: fit-content;
+  &__key {
+    flex: 0 1 32%;
+  }
+
+  &__value {
+    flex: 0 1 62%;
+  }
+}
+
+.btnContainer {
+  flex: 0 1 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include mixins.respond-less(vars.$screen-phone) {
+    flex-direction: row;
+  }
+}
+
+.img {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+.btn {
+  border-radius: 8px;
+  font-size: 1.5rem;
+
+  background: var(--color-cyan);
+  color: var(--color-white);
+
+  &__buy{
+    padding: 5px 20px;
+  }
+
+  &__amount{
+    padding: 5px 10px;
+    text-align: center;
+  }
+}
+
+.lineHr{
+  flex: 0 1 100%;
+  height: 2px;
+  margin: 8px 0;
+  background: var(--color-dark);
+}
+
+.amount{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__count{
+    max-width: 60px;
+    margin: 0 5px;
+    font-size: 1rem;
+
+    border-radius: 6px;
+
+    text-align: center;
+  }
+
+  @include mixins.respond-less(vars.$screen-phone) {
+    max-width: fit-content;
+  }
+}

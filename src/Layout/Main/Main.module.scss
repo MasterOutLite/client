@@ -1,0 +1,8 @@
+@use "../../styles/mixins";
+@use "../../styles/vars";
+@import "../../styles/template";
+
+.page {
+  width: 100%;
+  flex-grow: 1;
+}

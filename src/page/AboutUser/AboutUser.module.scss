@@ -1,0 +1,48 @@
+$borderRadius: 12px;
+
+.root {
+  flex-direction: column;
+  padding: 15px;
+}
+
+.title {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.input {
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 2rem;
+
+  border: 2px solid var(--color-dark);
+  border-radius: $borderRadius;
+}
+
+.btn {
+  display: inline-block;
+  width: max-content;
+  padding: 10px;
+
+  font-size: 2rem;
+  border-radius: $borderRadius;
+
+  background: var(--color-cyan);
+  color: var(--color-white);
+}

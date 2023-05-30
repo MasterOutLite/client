@@ -1,0 +1,40 @@
+@use "../../styles/vars";
+@use "../../styles/mixins";
+@use "../../styles/theme";
+
+$height: 50px;
+$item-height: 40px;
+$header-bg: #000;
+$header-color: #fff;
+
+.header {
+  width: 100%;
+  background: $header-bg;
+  color: $header-color;
+}
+
+.container {
+  height: $height;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 10px 1rem;
+  max-width: 1200px;
+
+  @include mixins.respond-less(vars.$screen-sm) {
+    padding: 1rem;
+  }
+}
+
+.item {
+  height: $item-height;
+  cursor: pointer;
+}
+
+.logoText {
+  flex-grow: 1;
+  font-size: 3rem;
+  cursor: pointer;
+}

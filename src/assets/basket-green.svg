@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.43 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #21db21;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="_Шар_5" data-name="Шар 5">
+    <g>
+      <path class="cls-1" d="M.24,2.11c1.3-.16,5.31-.48,9.24,1.98,5.9,3.69,6.54,10.44,6.6,11.22"/>
+      <circle class="cls-1" cx="18.71" cy="49.76" r="5.24"/>
+      <circle class="cls-1" cx="52.74" cy="48.89" r="5.24"/>
+      <path class="cls-1" d="M53.97,35.82l-36.14,1.23c-.95,.03-1.74-.73-1.74-1.68V15.68c0-.93,.75-1.68,1.68-1.68H61.74c1.21,0,2.02,1.23,1.55,2.34l-7.83,18.46c-.26,.6-.84,1-1.49,1.03Z"/>
+    </g>
+  </g>
+</svg>
